@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Maisons.com</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Marquesina superior delgada */
+        .top-bar {
+            background-color: #f0f0f0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            justify-content: start;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        .top-bar img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .top-bar span {
+            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Segunda marquesina más oscura con pestañas */
+        .nav-bar {
+            background-color: #333;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Marquesina superior con logo y nombre -->
+    <div class="top-bar">
+        <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\logo.jpg" alt="Logo">
+        <span>maisons.com</span>
+    </div>
+
+    <!-- Segunda marquesina con pestañas de navegación -->
+    <div class="nav-bar">
+        <a href="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\home1.html">Accueil</a>
+        
+        <a href="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\comentarios.html" >Membres de l'équipe</a>
+    </div>
+
+    
+<style>
+    /* --- FUENTES Y ESTILOS GENERALES --- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f4f6; /* gris muy claro */
+      color: #333;
+    }
+
+    h1 {
+      color: #1e3a5f; /* azul elegante */
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* --- CONTENEDOR PRINCIPAL --- */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    /* --- GALERÍA DE IMÁGENES DESLIZABLE --- */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    .slider img {
+      width: 100%;
+      display: none;
+    }
+
+    .slider img.active {
+      display: block;
+    }
+
+    .slider-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 10px;
+    }
+
+    .slider-buttons button {
+      background-color: rgba(30, 58, 95, 0.6);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    /* --- DESCRIPCIÓN GENERAL (ARRIBA) --- */
+    .description {
+      padding: 20px;
+      background-color: #e9edf2; /* gris azulado */
+      border-bottom: 2px solid #c4a484; /* café claro */
+    }
+
+    .description p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    /* --- INFORMACIÓN DETALLADA (ABAJO) --- */
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .info div {
+      background-color: #f8f9fa;
+      padding: 10px 15px;
+      border-left: 4px solid #c4a484; /* borde marrón claro */
+      border-radius: 5px;
+    }
+
+    .info strong {
+      color: #1e3a5f;
+    }
+
+    /* --- PIE DE CONTACTO --- */
+    .contact {
+      text-align: center;
+      padding: 20px;
+      background-color: #f2f4f6;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .contact a {
+      color: #1e3a5f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+   <h1> Maison 1 - Bvd de Saint-Georges 58, 1205 Genève, Suiza </h1>
+
+  <div class="container">
+
+    
+    <div class="slider">
+      <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\sala.jpg" class="active" alt="Image 1">
+      <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\cuarto1.jpg" alt="Image 2">
+      <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\baño.jpg" alt="Image 3">
+      <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\atras.jpg" alt="Image 4">
+
+     
+      <div class="slider-buttons">
+        <button onclick="prevImage()">&#10094;</button>
+        <button onclick="nextImage()">&#10095;</button>
+      </div>
+    </div>
+
+    
+    <div class="description">
+      <p> Appartement à deux étages avec quatre chambres et une grande salle de bain. Séjour avec télévision et accès internet. Cour arrière avec piscine sans produits chimiques.
+Situé au Bvd de Saint-Georges 58, 1205 Genève, Suisse
+À côté du restaurant Royal Thai Cuisine, en face de U Express </p>
+    </div>
+
+    
+    <div class="info">
+      <div><strong>Surface :</strong> 80 m²</div>
+      <div><strong>Étage :</strong> 2e</div>
+      <div><strong>Ascenseur :</strong> Non</div>
+      <div><strong>Terrasse :</strong> Non</div>
+      <div><strong>Pièces :</strong> 4</div>
+      <div><strong>Parking :</strong> 1</div>
+      <div><strong>Transports :</strong> bus, trolleybus, bateaux et trains </div>
+      <div><strong>Prix :</strong> 1 500 € CC</div>
+    </div>
+
+ 
+    <div class="contact">
+      Contactez : Adriana Montalvo A. – <a href="mailto:adriana.almazan@urei.edu.mx">adriana.almazan@urei.edu.mx</a> – Tel : 06 55 22 44 33
+    </div>
+
+  </div>
+
+ 
+  <script>
+    const images = document.querySelectorAll(".slider img");
+    let current = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.classList.toggle("active", i === index);
+      });
+    }
+
+    function nextImage() {
+      current = (current + 1) % images.length;
+      showImage(current);
+    }
+
+    function prevImage() {
+      current = (current - 1 + images.length) % images.length;
+      showImage(current);
+    }
+  </script>
+
+</body>
+</html>

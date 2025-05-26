@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Commentaires - Maisons.com</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Marquesina superior delgada */
+        .top-bar {
+            background-color: #f0f0f0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        .top-bar img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .top-bar span {
+            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .nav-bar {
+            background-color: #333;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenedor principal */
+        .container {
+            padding: 30px 20px;
+        }
+
+        /* Tarjetas de comentario */
+        .comment-box {
+            background-color: #e0e0e0; /* gris claro */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        .user-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            background-color: #ccc;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .comment-content {
+            flex: 1;
+            position: relative;
+        }
+
+        .username {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .text {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Marquesina superior -->
+    <div class="top-bar">
+        <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\logo.jpg" alt="Logo">
+        <span>maisons.com</span>
+    </div>
+
+    <!-- Barra de navegación sin botón de "inicio" -->
+    <div class="nav-bar">
+	<a href="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\home1.html">Accueil</a>        
+    </div>
+
+    <!-- Contenido principal: Comentarios -->
+    <div class="container">
+
+        <!-- Comentario 1 -->
+        <div class="comment-box">
+            <!-- Imagen de usuario -->
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\usuario.jpg" alt="Utilisateur 1" class="user-photo">
+            <div class="comment-content">
+                <div class="username">Utilisateur 1</div>
+                <div class="text"> Bonjour, professeur. J'espère que vous aimez la page. Nous l'avons fait de la tête aux pieds pour le projet final. 
+<br>
+-Almazán  </div>
+                <div class="rating">4.5/5</div> <!-- Puedes cambiar esto manualmente -->
+            </div>
+        </div>
+
+        <!-- Comentario 2 -->
+        <div class="comment-box">
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\usuario.jpg" alt="Utilisateur 2" class="user-photo">
+            <div class="comment-content">
+                <div class="username">Utilisateur 2</div>
+                <div class="text"> -Galindo </div>
+                <div class="rating">5/5</div>
+            </div>
+        </div>
+
+        <!-- Comentario 3 -->
+        <div class="comment-box">
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\usuario.jpg" alt="Utilisateur 3" class="user-photo">
+            <div class="comment-content">
+                <div class="username">Utilisateur 3</div>
+                <div class="text"> -Longoria </div>
+                <div class="rating">3.8/5</div>
+            </div>
+        </div>
+
+        <!-- Comentario 4 -->
+        <div class="comment-box">
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\usuario.jpg" alt="Utilisateur 4" class="user-photo">
+            <div class="comment-content">
+                <div class="username">Utilisateur 4</div>
+                <div class="text"> -Herrera </div>
+                <div class="rating">4.7/5</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
