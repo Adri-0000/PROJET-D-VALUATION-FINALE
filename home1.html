@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - Maisons.com</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+        }
+
+        /* Marquesina superior delgada */
+        .top-bar {
+            background-color: #f0f0f0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+
+        .top-bar img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .top-bar span {
+            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Barra de navegación */
+        .nav-bar {
+            background-color: #333;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        /* Tarjetas de maison */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            width: 250px;
+            margin: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: border 0.3s ease;
+        }
+
+        .card:hover {
+            border: 2px solid gray;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content a {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Marquesina superior -->
+    <div class="top-bar">
+        <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\logo.jpg" alt="Logo">
+        <span>maisons.com</span>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="nav-bar">
+        
+        
+        <a href="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\comentarios.html" >Membres de l'équipe</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="card">
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\casa1.jpg" alt="Maison 1">
+            <div class="card-content">
+                <a href="maison1.html">Maison 1</a>
+                <p> Bvd de Saint-Georges 58, 1205 Genève, Suiza </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\casa2.jpg" alt="Maison 2">
+            <div class="card-content">
+                <a href="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\home1.html" >Maison 2</a>
+                <p> XXX </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\casa3.jpg" alt="Maison 3">
+            <div class="card-content">
+                <a href="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\home1.html" >Maison 3</a>
+                <p> XXX </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\casa4.jpg" alt="Maison 4">
+            <div class="card-content">
+                <a href= "C:\Users\adria\OneDrive\Imágenes\Escritorio\Proyectos web\home1.html">Maison 4</a>
+                <p> XXX </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
